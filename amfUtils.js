@@ -923,6 +923,7 @@ function amf0Encode(a) {
 var rtmpCmdDecode = {
     "_result": [ "transId","cmdObj","info" ],
     "_error": [ "transId","cmdObj","info","streamId" ], // Info / Streamid are optional
+    "_checkbw":["transId", "cmdObj"],
     "onStatus": [ "transId","cmdObj","info" ],
     "releaseStream": [ "transId", "cmdObj", "streamId" ],
     "getStreamLength": [ "transId", "cmdObj", "streamId" ],
